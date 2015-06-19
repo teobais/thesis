@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Screen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model="http://wireframesketcher.com/1.0/model.ecore">
+  <widgets xsi:type="model:Master" id="1" x="200" y="10" measuredWidth="456" measuredHeight="872">
+    <screen xsi:type="model:WidgetGroup" href="../assets/Android5/Devices/Nexus%206.screen#Nexus%206"/>
+  </widgets>
+  <widgets xsi:type="model:Group" id="2" x="256" y="144" width="336" height="600" text="Player Information" measuredWidth="336" measuredHeight="600">
+    <font size="19px"/>
+  </widgets>
+  <widgets xsi:type="model:Group" id="3" x="288" y="192" width="256" height="369" text="Final Ranking" measuredWidth="256" measuredHeight="369">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Table" id="14" x="328" y="297" height="160" text="Rank, Nickname,Score&#xA;1,nick54, 432&#xA;2,robin, 333&#xA;3,batman, 318&#xA;4, bomberman, 279&#xA;5, spiderman, 156&#xA;6,movie_genius_94, 98" measuredWidth="178" measuredHeight="160" alternative="#eeeeee">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Hotspot" id="16" x="305" y="600" width="229" height="112" measuredWidth="229" measuredHeight="112"/>
+  <widgets xsi:type="model:Note" id="17" x="320" y="628" width="202" height="56" text="Maybe some navigation/action buttons / to be discussed in a next iteration" measuredWidth="202" measuredHeight="56">
+    <font/>
+  </widgets>
+  <hRuler/>
+  <vRuler/>
+  <font size="12px"/>
+</model:Screen>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Screen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model="http://wireframesketcher.com/1.0/model.ecore">
+  <widgets xsi:type="model:Master" id="2" x="200" y="10" measuredWidth="456" measuredHeight="872">
+    <screen xsi:type="model:WidgetGroup" href="../assets/Android5/Devices/Nexus%206.screen#Nexus%206"/>
+  </widgets>
+  <widgets xsi:type="model:Group" id="3" x="256" y="136" width="336" height="625" text="Current status" measuredWidth="336" measuredHeight="625">
+    <font size="19px" bold="true"/>
+  </widgets>
+  <widgets xsi:type="model:Group" id="4" x="288" y="184" width="256" height="73" text="Total Players" measuredWidth="256" measuredHeight="73">
+    <font size="16px"/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="5" x="298" y="217" text="Number of connected players:" measuredWidth="174" measuredHeight="23">
+    <font bold="true"/>
+  </widgets>
+  <widgets xsi:type="model:TextField" id="6" x="488" y="217" width="40" measuredWidth="40" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Group" id="7" x="288" y="272" width="256" height="225" text="Connected players" measuredWidth="256" measuredHeight="225">
+    <font size="16px"/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="8" x="383" y="320" text="nick54" measuredWidth="40" measuredHeight="23">
+    <font italic="false"/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="10" x="368" y="346" text="bomberman" measuredWidth="72" measuredHeight="23">
+    <font italic="false"/>
+  </widgets>
+  <widgets xsi:type="model:Panel" id="12" x="288" y="679" width="256" height="68" measuredWidth="256" measuredHeight="68"/>
+  <widgets xsi:type="model:Button" id="13" x="439" y="695" width="74" height="35" text="Start" measuredWidth="74" measuredHeight="35">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Button" id="14" x="320" y="696" width="74" height="33" text="Cancel" measuredWidth="74" measuredHeight="33">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="15" x="374" y="373" text="spiderman" measuredWidth="62" measuredHeight="23">
+    <font italic="false"/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="16" x="383" y="402" text="batman" measuredWidth="47" measuredHeight="23">
+    <font italic="false"/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="17" x="383" y="434" text="robin43" measuredWidth="46" measuredHeight="23">
+    <font italic="false"/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="18" x="360" y="464" text="movie_genius_94" measuredWidth="96" measuredHeight="23">
+    <font italic="false"/>
+  </widgets>
+  <widgets xsi:type="model:Group" id="20" x="288" y="512" width="256" height="137" text="Filters" measuredWidth="256" measuredHeight="137">
+    <font size="16px"/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="21" x="320" y="608" text="Rating:" measuredWidth="45" measuredHeight="23">
+    <font bold="true"/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="23" x="318" y="536" text="Actors:" measuredWidth="45" measuredHeight="23">
+    <font bold="true"/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="24" x="320" y="580" text="Years:" measuredWidth="39" measuredHeight="23">
+    <font bold="true"/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="25" x="318" y="558" text="Gender:" measuredWidth="51" measuredHeight="23">
+    <font bold="true"/>
+  </widgets>
+  <widgets xsi:type="model:Note" id="29" x="40" y="532" width="154" height="59" text="Placeholder for some settings (maybe filters) reference&#xD;&#xA;" measuredWidth="154" measuredHeight="59">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="30" x="383" y="536" text="Robert De Niro, Al Pacino" measuredWidth="140" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="31" x="383" y="558" text="Crime, Drama" measuredWidth="79" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="32" x="383" y="580" text="1980-2000" measuredWidth="59" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="33" x="383" y="608" text="7.1-10" measuredWidth="38" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Hotspot" id="34" x="266" y="512" width="303" height="161" measuredWidth="303" measuredHeight="161"/>
+  <hRuler/>
+  <vRuler/>
+  <font size="12px"/>
+</model:Screen>
