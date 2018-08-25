@@ -1,0 +1,463 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.game.edu.ibuzzserver.ConfigurationActivity"
+    android:nestedScrollingEnabled="true">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="false"
+        android:background="@drawable/my_border"
+        android:nestedScrollingEnabled="true">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:background="@drawable/my_border_labels">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/gameType"
+                android:id="@+id/gameTypeLabel"
+                android:background="@drawable/my_border_labels"
+                android:padding="3dp"
+                android:layout_weight="0.60" />
+
+            <ToggleButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/gameType"
+                android:id="@+id/gameTypeChooser"
+                android:textOff="@string/no"
+                android:textOn="@string/yes"
+                android:onClick="gameTypeChoose"
+                android:background="@drawable/my_border_button"
+                android:lines="1"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:layout_weight="0.40" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:background="@drawable/my_border_labels">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/port"
+                android:id="@+id/portLabel"
+                android:background="@drawable/my_border_labels"
+                android:padding="3dp"
+                android:layout_weight="0.60" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/portText"
+                android:background="@drawable/my_border_input"
+                android:padding="3dp"
+                android:layout_weight="0.40" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/my_border_labels">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/scoreVisible"
+                android:id="@+id/textView2"
+                android:background="@drawable/my_border_labels"
+                android:padding="3dp"
+                android:layout_weight="0.60" />
+
+            <ToggleButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/scoreVisible"
+                android:id="@+id/scoreVisibilityChooser"
+                android:textOff="@string/no"
+                android:textOn="@string/yes"
+                android:onClick="chooseScoreVisibility"
+                android:maxWidth="60dp"
+                android:background="@drawable/my_border_button"
+                android:layout_weight="0.40" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/my_border_labels">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/playersInformed"
+                android:id="@+id/textView3"
+                android:background="@drawable/my_border_labels"
+                android:padding="3dp"
+                android:layout_weight="0.60" />
+
+            <ToggleButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/playersInformed"
+                android:id="@+id/playerInforamtionChooser"
+                android:textOff="@string/no"
+                android:textOn="@string/yes"
+                android:onClick="choosePlayerInformation"
+                android:maxWidth="60dp"
+                android:background="@drawable/my_border_button"
+                android:layout_weight="0.40" />
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/my_border_labels"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/scorePerCorrect"
+                android:id="@+id/textView4"
+                android:background="@drawable/my_border_labels"
+                android:padding="3dp"
+                android:layout_weight="0.60" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/correctScore"
+                android:text="1"
+                android:layout_weight="0.40"
+                android:background="@drawable/my_border_input"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/my_border_labels"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/serverSounds"
+                android:id="@+id/serverSoundsLabel"
+                android:background="@drawable/my_border_labels"
+                android:padding="3dp"
+                android:layout_weight="0.30" />
+            <ToggleButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/serverSounds"
+                android:id="@+id/serverSounds"
+                android:textOff="@string/no"
+                android:textOn="@string/yes"
+                android:onClick="chooseServerSounds"
+                android:maxWidth="60dp"
+                android:background="@drawable/my_border_button"
+                android:layout_weight="0.20" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/my_border_labels"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/phoneHelp"
+                android:id="@+id/textView5"
+                android:background="@drawable/my_border_labels"
+                android:padding="3dp"
+                android:layout_weight="0.25" />
+
+            <ToggleButton
+                android:layout_width="61dp"
+                android:layout_height="wrap_content"
+                android:text="@string/helpAvailable"
+                android:id="@+id/helpPhone"
+                android:textOff="@string/no"
+                android:textOn="@string/yes"
+                android:longClickable="true"
+                android:onClick="helpPhone"
+                android:background="@drawable/my_border_button"
+                android:layout_weight="0.10" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/audienceHelp"
+                android:id="@+id/textView8"
+
+                android:background="@drawable/my_border_labels"
+                android:padding="3dp"
+                android:layout_weight="0.25" />
+
+            <ToggleButton
+                android:layout_width="61dp"
+                android:layout_height="wrap_content"
+                android:text="New ToggleButton"
+                android:id="@+id/helpAudience"
+                android:textOff="@string/no"
+                android:textOn="@string/yes"
+                android:longClickable="true"
+                android:onClick="helpAudience"
+                android:background="@drawable/my_border_button"
+                android:layout_weight="0.10" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/halfHelp"
+                android:id="@+id/textView9"
+
+                android:background="@drawable/my_border_labels"
+                android:padding="3dp"
+                android:layout_weight="0.25" />
+
+            <ToggleButton
+                android:layout_width="59dp"
+                android:layout_height="wrap_content"
+                android:text="New ToggleButton"
+                android:id="@+id/helpHalf"
+                android:textOn="@string/yes"
+                android:textOff="@string/no"
+                android:longClickable="true"
+                android:onClick="helpHalf"
+                android:background="@drawable/my_border_button"
+                android:layout_weight="0.10" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/my_border">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/waitingtimeforconnections"
+                android:id="@+id/waitingtimeforconnections"
+                android:background="@drawable/my_border_labels"
+                android:padding="3dp"
+                android:layout_weight="0.25" />
+
+            <EditText
+                android:layout_width="55dp"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/waitingTimeText"
+                android:maxWidth="60dp"
+                android:background="@drawable/my_border_input"
+                android:layout_weight="0.08" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/questionsPerGame"
+                android:id="@+id/textView7"
+                android:background="@drawable/my_border_labels"
+                android:padding="3dp"
+                android:layout_weight="0.25" />
+
+            <EditText
+                android:layout_width="55dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/questionsPerGameText"
+                android:layout_weight="0.08"
+                android:inputType="number"
+                android:maxWidth="60dp"
+                android:background="@drawable/my_border_input"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/buzz"
+                android:id="@+id/textView6"
+                android:background="@drawable/my_border_labels"
+                android:padding="3dp"
+                android:layout_weight="0.25" />
+
+            <EditText
+                android:layout_width="55dp"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/buzzpercent"
+                android:layout_weight="0.08"
+                android:background="@drawable/my_border_input"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/my_border">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/my_border">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/actors"
+                    android:id="@+id/actorsfilterLabel"
+                    android:background="@drawable/my_border_labels"
+                    android:padding="3dp"
+                    android:layout_weight="0.10" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/actorsfilter"
+                    android:layout_weight="0.90"
+                    android:background="@drawable/my_border_input"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/my_border">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/genders"
+                    android:id="@+id/genderfilterLabel"
+                    android:background="@drawable/my_border_labels"
+                    android:padding="3dp"
+                    android:layout_weight="0.10" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/genderfilter"
+                    android:layout_weight="0.90"
+                    android:background="@drawable/my_border_input"/>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/my_border">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/years"
+                    android:id="@+id/yearfilterLabel"
+                    android:background="@drawable/my_border_labels"
+                    android:padding="3dp"
+                    android:layout_weight="0.10" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/yearfilter"
+                    android:layout_weight="0.90"
+                    android:background="@drawable/my_border_input"/>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ratings"
+                    android:id="@+id/ratingfilterLabel"
+                    android:background="@drawable/my_border_labels"
+                    android:padding="3dp"
+                    android:layout_weight="0.10" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ratingfilter"
+                    android:layout_weight="0.90"
+                    android:background="@drawable/my_border_input"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/next"
+            android:id="@+id/nextBtn"
+            android:onClick="go"
+            android:background="@drawable/my_border_button" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/back"
+            android:id="@+id/button7"
+            android:background="@drawable/my_border_button"
+            android:onClick="goBack1" />
+
+    </LinearLayout>
+</RelativeLayout>
+
+
+    </ScrollView>
+<!-- From: file:/Z:/DATA/projects/iBuzzServer/app/src/main/res/layout/activity_configuration.xml -->

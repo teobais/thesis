@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">iBuzz Client</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="newGame">New Game</string>
+    <string name="exit">Exit</string>
+    <string name="title_activity_game">Connection Settings</string>
+
+    <string name="nickname">Nickname...</string>
+    <string name="ipaddress">IP Address...</string>
+    <string name="portnumber">Port Number...</string>
+
+    <string name="connect">Connect</string>
+    <string name="wait">Wait for connections</string>
+    <string name="noconnection">No connections, try again</string>
+    <string name="begingame">None request for game</string>
+    <string name="back">Back</string>
+    <string name="blank">-</string>
+    <string name="questionText">Question</string>
+    <string name="possibleAnswer">Possible Answer</string>
+    <string name="serverMessages">Server Messages</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="alpha">a</string>
+    <string name="beta">b</string>
+    <string name="ci">c</string>
+    <string name="di">d</string>
+    <string name="e">e</string>
+    <string name="buzzer">buzzer</string>
+
+
+    <string name="timeLeft">Time Left</string>
+
+    <string name="correctAnswers">Correct Answers</string>
+    <string name="wrongAnswers">Wrong Answers</string>
+    <string name="notAnswered">N/A</string>
+
+    <string name="help50_50">50% - 50%</string>
+    <string name="helpaudience">Audience</string>
+    <string name="helpphone">phone</string>
+
+    <string name="finish">Finish</string>
+
+    <!-- messages -->
+    <string name="_m_Yournicknamehasbeenmodifiedto">Your nickname has been modified to </string>
+    <string name="_m_GameStarted">Game Started!!!</string>
+    <string name="_m_CorrectAnswerfrom">Correct Answer from </string>
+    <string name="_m_WrongAnswerfrom">Wrong Answer from </string>
+    <string name="_m_endofgame">End of game!!!</string>
+    <string name="_m_timeout">Time Out</string>
+    <string name="_m_gamefailure">Game failure...</string>
+    <string name="_m_connectionerror">Connection Error</string>
+    <string name="_m_imagdoesnotexist">Image Does Not exist or Network Error</string>
+    <string name="_m_checkinput">You have to check input to the following fields:</string>
+    <string name="title_activity_results">ResultsActivity</string>
+</resources>

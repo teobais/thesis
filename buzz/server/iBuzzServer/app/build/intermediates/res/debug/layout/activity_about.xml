@@ -1,0 +1,218 @@
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.game.edu.ibuzzserver.AboutActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/linearLayout"
+        android:background="@drawable/my_border">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/aboutThodoris"
+                android:id="@+id/aboutThodoris"
+                android:padding="3dp"
+                android:background="@drawable/my_border_labels"
+                android:clickable="true" />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/author"
+                    android:id="@+id/thodorisSocialAuthor"
+                    android:background="@drawable/my_border_button"
+                    android:onClick="openUrl"
+                    android:nestedScrollingEnabled="false"
+                    android:textSize="9dp" />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/blog"
+                    android:id="@+id/thodorisSocialBlog"
+                    android:background="@drawable/my_border_button"
+                    android:onClick="openUrl"
+                    android:textSize="9dp" />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/site"
+                    android:id="@+id/thodorisSocialSite"
+                    android:background="@drawable/my_border_button"
+                    android:onClick="openUrl"
+                    android:textSize="9dp" />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/linkedin"
+                    android:id="@+id/thodorisSocialLinkedIn"
+                    android:background="@drawable/my_border_button"
+                    android:onClick="openUrl"
+                    android:textSize="9dp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/twitter"
+                    android:id="@+id/thodorisSocialTwitter"
+                    android:background="@drawable/my_border_button"
+                    android:onClick="openUrl"
+                    android:textSize="9dp" />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/instagram"
+                    android:id="@+id/thodorisSocialInstagramt"
+                    android:background="@drawable/my_border_button"
+                    android:singleLine="true"
+                    android:onClick="openUrl"
+                    android:textSize="9dp" />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/github"
+                    android:id="@+id/thodorisSocialGitHub"
+                    android:background="@drawable/my_border_button"
+                    android:onClick="openUrl"
+                    android:textSize="9dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/aboutMinas"
+                android:id="@+id/aboutMinas"
+                android:padding="3dp"
+                android:background="@drawable/my_border_labels" />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/author"
+                    android:id="@+id/minasSocialAuthor"
+                    android:background="@drawable/my_border_button"
+                    android:onClick="openUrl"
+                    android:textSize="9dp" />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/blog"
+                    android:id="@+id/minasSocialBlog"
+                    android:background="@drawable/my_border_button"
+                    android:onClick="openUrl"
+                    android:textSize="9dp" />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/site"
+                    android:id="@+id/minasSocialSite"
+                    android:background="@drawable/my_border_button"
+                    android:onClick="openUrl"
+                    android:textSize="9dp" />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/linkedin"
+                    android:id="@+id/minasSocialLinkedIn"
+                    android:background="@drawable/my_border_button"
+                    android:onClick="openUrl"
+                    android:textSize="9dp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/twitter"
+                    android:id="@+id/minasSocialTwitter"
+                    android:background="@drawable/my_border_button"
+                    android:onClick="openUrl"
+                    android:textSize="9dp" />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/instagram"
+                    android:id="@+id/minasSocialInstagram"
+                    android:background="@drawable/my_border_button"
+                    android:onClick="openUrl"
+                    android:textSize="9dp" />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/github"
+                    android:id="@+id/minasSocialGitHub"
+                    android:background="@drawable/my_border_button"
+                    android:onClick="openUrl"
+                    android:textSize="9dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+            <TextView
+                android:layout_width="373dp"
+                android:layout_height="wrap_content"
+                android:text="@string/projectincommon"
+                android:id="@+id/projectsInCommon"
+                android:layout_below="@+id/linearLayout"
+                android:layout_alignParentStart="true"
+                android:padding="3dp"
+                android:background="@drawable/my_border_labels" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/back"
+            android:id="@+id/button2"
+            android:background="@drawable/my_border_button"
+            android:onClick="goBack" />
+
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>
+</ScrollView><!-- From: file:/Z:/DATA/projects/iBuzzServer/app/src/main/res/layout/activity_about.xml -->

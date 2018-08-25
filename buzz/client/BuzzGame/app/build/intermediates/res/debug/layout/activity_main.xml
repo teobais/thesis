@@ -1,0 +1,240 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.game.edu.buzzgame.MainActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/my_border">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/timeLeft"
+                android:id="@+id/timeLeftLabel"
+                android:layout_gravity="right"
+                android:background="@drawable/my_border_labels"
+                android:layout_weight="0.55"
+                android:padding="3dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/blank"
+                android:id="@+id/timeLeft"
+                android:layout_gravity="right"
+                android:background="@drawable/my_border_input"
+                android:layout_weight="0.45"
+                android:padding="3dp" />
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/correctAnswers"
+                android:id="@+id/correctAnswersLabel"
+                android:background="@drawable/my_border_labels"
+                android:layout_weight="0.15"
+                android:padding="3dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/blank"
+                android:id="@+id/correctAnswers"
+                android:background="@drawable/my_border_input"
+                android:layout_weight="0.20"
+                android:padding="3dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/wrongAnswers"
+                android:id="@+id/wrongAnswersLabel"
+                android:background="@drawable/my_border_labels"
+                android:layout_weight="0.15"
+                android:padding="3dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/blank"
+                android:id="@+id/wrongAnswers"
+                android:layout_weight="0.20"
+                android:background="@drawable/my_border_input"
+                android:padding="3dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/notAnswered"
+                android:id="@+id/notAnsweredLabel"
+                android:background="@drawable/my_border_labels"
+                android:layout_weight="0.15"
+                android:padding="3dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/blank"
+                android:id="@+id/notAnswered"
+                android:background="@drawable/my_border_input"
+                android:layout_weight="0.15"
+                android:padding="3dp" />
+
+            </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/help50_50"
+                android:id="@+id/help50_50Btn"
+                android:onClick="make50_50Help"
+                android:background="@drawable/my_border_button" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/helpaudience"
+                android:id="@+id/helpAudienceBtn"
+                android:onClick="makeAudienceHelp"
+                android:background="@drawable/my_border_button" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/helpphone"
+                android:id="@+id/helpPhoneBtn"
+                android:onClick="makePhoneHelp"
+                android:background="@drawable/my_border_button" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_weight="0.55"
+                android:layout_height="wrap_content"
+
+                android:text="@string/blank"
+                android:id="@+id/questionText"
+                android:layout_width="wrap_content"
+                android:background="@drawable/my_border_input"
+                android:padding="3dp" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/poster"
+                android:maxHeight="80dp"
+                android:layout_weight="0.45"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/alpha"
+                android:id="@+id/answerA"
+                android:onClick="setAnswer"
+                android:textSize="9dp"
+                android:layout_weight="0.49"
+                android:background="@drawable/my_border_button" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/beta"
+                android:id="@+id/answerB"
+                android:onClick="setAnswer"
+                android:textSize="9dp"
+                android:layout_weight="0.49"
+                android:background="@drawable/my_border_button" />
+
+            </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_weight="0.49"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ci"
+            android:id="@+id/answerC"
+            android:onClick="setAnswer"
+            android:background="@drawable/my_border_button"
+            android:textSize="9dp" />
+
+        <Button
+            android:layout_weight="0.49"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/di"
+            android:id="@+id/answerD"
+            android:onClick="setAnswer"
+            android:background="@drawable/my_border_button"
+            android:textSize="9dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_weight="0.49"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/e"
+            android:id="@+id/answerE"
+            android:onClick="setAnswer"
+            android:background="@drawable/my_border_button"
+            android:textSize="9dp" />
+
+        <Button
+            android:layout_weight="0.49"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/buzzer"
+            android:id="@+id/buzzer"
+            android:onClick="setAnswer"
+            android:background="@drawable/my_border_button"
+            android:textSize="9dp" />
+
+
+    </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
+<!-- From: file:/Z:/DATA/projects/BuzzGame/app/src/main/res/layout/activity_main.xml -->
